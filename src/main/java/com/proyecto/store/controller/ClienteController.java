@@ -5,12 +5,15 @@ import com.proyecto.store.services.ClienteService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 /**
  * Controlador REST para administrar los clientes.
  *
  * @author Alejandro
  */
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
